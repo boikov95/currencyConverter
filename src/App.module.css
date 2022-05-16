@@ -9,7 +9,15 @@
 }
 
 .content {
-  width: 80vw;
+  width: 100%;
   height: auto;
   align-self: center;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    height: auto;
+    align-self: flex-start;
+  }
 }

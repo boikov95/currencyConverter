@@ -32,9 +32,7 @@ const AppNew: React.FC<AppType> = (props) => {
           <Sider
             collapsible
             collapsed={collapsed}
-            onCollapse={() => setCollapsed((prev) => !prev)}
             className="site-layout-background"
-            width={300}
           >
             <Menu
               theme="dark"

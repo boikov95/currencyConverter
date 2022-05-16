@@ -1,10 +1,10 @@
 .course {
-  width: 100%;
+  width: 97%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 -5px;
+  margin: 0 0;
   flex-wrap: wrap;
 }
 
