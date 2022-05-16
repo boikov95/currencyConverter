@@ -3,11 +3,13 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-color: rgb(213, 213, 216);
+  min-height: 100vh;
 }
 
 .content {
   width: 80vw;
   height: auto;
+  align-self: center;
 }

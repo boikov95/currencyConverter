@@ -35,3 +35,27 @@
   width: 55px;
   padding-right: 5px;
 }
+
+@media (max-width: 600px) {
+  .currentcourses__cours {
+    margin: 5px 5px;
+    padding: 0 10px;
+    border: 2px rgb(71, 224, 191) solid;
+    border-radius: 10px;
+    min-height: 55px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+  }
+  .currentcourses__cours__rezult {
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
+  .money {
+    width: 42px;
+    padding-right: 5px;
+  }
+}

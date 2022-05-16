@@ -41,7 +41,7 @@ const AppNew: React.FC<AppType> = (props) => {
               mode="inline"
               defaultOpenKeys={["sub1"]}
               defaultSelectedKeys={["1"]}
-              style={{ height: "93vh" }}
+              style={{ height: 20 }}
             >
               <SubMenu
                 key="sub1"

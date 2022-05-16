@@ -24,17 +24,22 @@ const SelectElement: React.FC<converterFromType> = ({
 }) => {
   return (
     <Select
+      className={s.ant_select}
       defaultValue={defaultValue}
       value={value}
-      style={{ width: 260 }}
       onChange={updateData}
     >
       {selectData
         .filter((elem) => (filter ? elem.name !== exception : !filter))
         .map((elem) => {
           return (
-            <Option key={elem.id} value={elem.name} label={elem.name}>
-              <div>
+            <Option
+              className={s.ant_select_selection}
+              key={elem.id}
+              value={elem.name}
+              label={elem.name}
+            >
+              <div className={s.ant_select_selection_text}>
                 <img alt="Флаг" className={s.money} src={elem.img} />
                 {`${elem.name} (${elem.description})`}
               </div>

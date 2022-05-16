@@ -12,22 +12,30 @@
   height: 120px;
   border: 2px rgb(71, 224, 191) solid;
   border-radius: 10px;
-  margin: 0 5px;
+  margin: 5 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.ant-select-selection {
-  height: 100px;
+.ant_select {
+  width: 270px;
+  margin: 10px 5px;
+}
+
+.ant_select_selection {
   border-radius: 10px;
-  background-color: rgb(71, 224, 191);
+}
+
+.ant_select_selection_text {
+  font-size: 15px;
 }
 
 .money {
-  width: 45px;
+  width: 50px;
   padding-right: 5px;
+  margin-top: -5px;
 }
 
 .change {
@@ -52,12 +60,40 @@
 }
 
 .currentMoney {
-  margin-right: 5px;
   border-radius: 10px;
   height: 100%;
   font-size: 20px;
+  margin: 0 5px;
 }
 
 .currentMoney.required {
   background-color: red;
+}
+
+@media (max-width: 600px) {
+  .ant_select {
+    width: 180px;
+    margin: 10px 2px;
+  }
+
+  .ant_select_selection_text {
+    font-size: 8px;
+  }
+
+  .money {
+    width: 40px;
+    padding-right: 5px;
+    margin-top: -4px;
+  }
+
+  .currentMoney {
+    border-radius: 10px;
+    height: 90%;
+    width: 85%;
+    font-size: 20px;
+    margin: 0 2px;
+  }
+  .error {
+    font-size: 10px;
+  }
 }
