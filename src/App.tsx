@@ -29,18 +29,8 @@ const AppNew: React.FC<AppType> = (props) => {
     <HashRouter>
       <div className={s.wrapper}>
         <div className={s.menu}>
-          <Sider
-            collapsible
-            collapsed={collapsed}
-            className="site-layout-background"
-          >
-            <Menu
-              theme="dark"
-              mode="inline"
-              defaultOpenKeys={["sub1"]}
-              defaultSelectedKeys={["1"]}
-              style={{ height: 20 }}
-            >
+          <Sider collapsed={collapsed} className="site-layout-background">
+            <Menu theme="dark" mode="inline" defaultOpenKeys={["sub1"]}>
               <SubMenu
                 key="sub1"
                 icon={<DollarCircleOutlined />}

@@ -56,8 +56,8 @@ const Converter: React.FC<converterType> = (props) => {
 
   useEffect(() => {
     if (
-      (+new Date() - +new Date(updateDate)) / 1000 / 60 < 1440 &&
-      (+new Date() - +new Date(timeStamp)) / 1000 / 60 < 60
+      (+new Date() - +new Date(updateDate)) / 1000 / 60 > 1440 &&
+      (+new Date() - +new Date(timeStamp)) / 1000 / 60 > 60
     ) {
       dispatch(getConvertedAmount());
     }
@@ -79,7 +79,7 @@ const Converter: React.FC<converterType> = (props) => {
     } else {
       setCalculatedMoney("");
     }
-  }, [currencyData, toAmount, fromAmount, money]);
+  }, [updateDate, timeStamp, toAmount, fromAmount, money]);
 
   return (
     <div className={s.converter}>

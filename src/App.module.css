@@ -20,4 +20,7 @@
     height: auto;
     align-self: flex-start;
   }
+  .wrapper {
+    align-items: flex-end;
+  }
 }

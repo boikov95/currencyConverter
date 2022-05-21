@@ -31,8 +31,8 @@ const Course: React.FC<CourseType> = () => {
 
   useEffect(() => {
     if (
-      (+new Date() - +new Date(updateDate)) / 1000 / 60 < 1440 &&
-      (+new Date() - +new Date(timeStamp)) / 1000 / 60 < 60
+      (+new Date() - +new Date(updateDate)) / 1000 / 60 > 1440 &&
+      (+new Date() - +new Date(timeStamp)) / 1000 / 60 > 60
     ) {
       dispatch(getConvertedAmount());
     }

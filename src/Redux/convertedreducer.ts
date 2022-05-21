@@ -36,7 +36,7 @@ let initialState = {
       id: 3,
       name: "JPY",
       description: "Японская иена",
-      img: "https://4.bp.blogspot.com/-yQqNs1Ze4uY/VgNg4IkXKFI/AAAAAAAAABw/fK0Jjb89Nd8/s200/Screenshot%2B2015-09-24%2Bat%2B2.32.43%2BPM.png",
+      img: "https://hpc2017.org/wp-content/uploads/2016/04/Heat-Pump-Flag-Japan-1.png",
     },
     {
       id: 4,
