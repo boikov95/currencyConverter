@@ -1,6 +1,6 @@
 import React from "react";
 import { Select } from "antd";
-import s from "./Converter.module.css";
+import s from "./Converter.module.scss";
 import { convertedAmount } from "../../Redux/convertedreducer";
 
 const { Option } = Select;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "antd/dist/antd.css";
-import s from "./App.module.css";
+import s from "./App.module.scss";
 import { HashRouter, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { compose } from "redux";
@@ -28,7 +28,7 @@ const AppNew: React.FC<AppType> = (props) => {
   return (
     <HashRouter>
       <div className={s.wrapper}>
-        <div className={s.menu}>
+        <div className={s.wrapper__menu}>
           <Sider collapsed={collapsed} className="site-layout-background">
             <Menu theme="dark" mode="inline" defaultOpenKeys={["sub1"]}>
               <SubMenu
@@ -46,7 +46,7 @@ const AppNew: React.FC<AppType> = (props) => {
             </Menu>
           </Sider>
         </div>
-        <div className={s.content}>
+        <div className={s.wrapper__content}>
           <Route path="/converter" render={() => <Converter />} />
           <Route path="/course" render={() => <Course />} />
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { convertedAmount } from "../../Redux/convertedreducer";
 import { AppStateType } from "../../Redux/redux-store";
-import s from "./Course.module.css";
+import s from "./Course.module.scss";
 
 type CurrencyRatioType = {
   amount: Array<convertedAmount>;

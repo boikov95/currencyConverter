@@ -1,3 +1,5 @@
+@import "./styles/variable.scss";
+
 .wrapper {
   width: 95%;
   margin: 0 auto;
@@ -6,21 +8,20 @@
   align-items: flex-start;
   background-color: rgb(213, 213, 216);
   min-height: 100vh;
-}
 
-.content {
-  width: 100%;
-  height: auto;
-  align-self: center;
-}
-
-@media (max-width: 600px) {
-  .content {
+  &__content {
     width: 100%;
-    height: auto;
-    align-self: flex-start;
+    // height: auto;
+    align-self: center;
+
+    @include breakpoint(lg) {
+      width: 100%;
+      // height: auto;
+      align-self: flex-start;
+    }
   }
-  .wrapper {
+
+  @include breakpoint(lg) {
     align-items: flex-end;
   }
 }

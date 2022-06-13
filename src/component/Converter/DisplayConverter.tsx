@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Converter.module.css";
+import s from "./Converter.module.scss";
 import SelectElement from "./SelectElement";
 import { convertedAmount } from "../../Redux/convertedreducer";
 

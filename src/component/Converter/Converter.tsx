@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import s from "./Converter.module.css";
+import s from "./Converter.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { AppStateType } from "../../Redux/redux-store";
 import { getConvertedAmount } from "../../Redux/convertedreducer";

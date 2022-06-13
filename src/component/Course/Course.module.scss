@@ -1,0 +1,56 @@
+@import "../../styles/variable.scss";
+
+.course {
+  width: 97%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  flex-wrap: wrap;
+  .currentcourses {
+    margin: 5px 5px;
+    &__cours {
+      margin: 5px 5px;
+      padding: 0 10px;
+      border: 2px rgb(71, 224, 191) solid;
+      border-radius: 10px;
+      min-height: 55px;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      .money {
+        width: 55px;
+        padding-right: 5px;
+        @include breakpoint(lg) {
+          width: 42px;
+          padding-right: 5px;
+        }
+      }
+      &__rezult {
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 10px;
+        @include breakpoint(lg) {
+          font-size: 15px;
+          font-weight: 500;
+          padding-left: 10px;
+        }
+      }
+      @include breakpoint(lg) {
+        margin: 5px 5px;
+        padding: 0 10px;
+        border: 2px rgb(71, 224, 191) solid;
+        border-radius: 10px;
+        min-height: 55px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+      }
+    }
+  }
+}

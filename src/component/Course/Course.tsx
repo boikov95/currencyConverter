@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import s from "./Course.module.css";
+import s from "./Course.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { AppStateType } from "../../Redux/redux-store";
 import CurrencyRatio from "./CurrencyRatio";
